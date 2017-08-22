@@ -1,0 +1,214 @@
+#canvas {
+    position:fixed;
+    width:100%;
+}
+body{
+	margin:0px;
+}
+#body{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+@font-face {
+	font-family: 'Futura';
+	src:url('./bin/data/font/Futura.ttf') format('truetype');
+}
+/*--------------------*/
+#top{
+	width:100%;
+	height:100%;
+	border-bottom: 1px solid black;
+}
+.top_logo{
+	position: relative;
+	font-family: "Futura",sans-serif;
+	font-size:6vw;
+	height:50%;
+	margin:0;
+
+}
+.top_logo span{
+	position: absolute;
+	top:50%;
+}
+
+.scroll{
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translate(0, -50%);
+	text-decoration: none;
+	padding-top: 70px;
+}
+.scroll span {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	display:block;
+	width:40px;
+	height: 40px;
+	margin-left: -20px;
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
+	transform: rotate(-45deg);
+	animation: sdb 1.5s infinite;
+	box-sizing: border-box;
+}
+@keyframes sdb {
+	0% {
+		transform: rotate(-45deg) translate(0, 0);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: rotate(-45deg) translate(-20px, 20px);
+		opacity: 0;
+	}
+}
+/*--------------------*/
+#about{
+	width:100%;
+	height:200%;
+	font-size:0;
+}
+
+.about_h1{
+	font-family:"Futura",sans-serif;
+	font-size:32px;
+	height:10%;
+	/*margin:0;*/
+	margin-top:5%;
+	/*margin-bottom: 5%*/
+}
+.about_1{
+	width:100%;
+	height:35%;
+	border-bottom: 1px solid black;
+}
+.about_1 div{
+	height:100%;
+	width:40%;
+	display:inline-block;
+	text-align: right;
+}
+.about_1_img{
+	border-radius: 50%;
+	height:30%;
+	display:inline-block;
+}
+
+.about_1_list{
+	width:50%;
+	padding:0;
+	margin-left:10%;
+	list-style-type:none;
+	display: inline-block;
+	font-size: 16px;
+	vertical-align: top;
+	/*text-align: center;*/
+}
+
+.about_1_list li{
+	margin-bottom: 50px;
+}
+.about_2_list{
+	padding:0;
+	width:100%;
+	font-size:16px;
+	list-style-type:none;
+	display: inline-block;
+	text-align: center;
+	margin-top: 10%;
+}
+
+.about_2_list li{
+	margin-bottom: 5%;
+}
+
+
+.about_1 img{
+	border-radius: 50%;
+}
+
+/*--------------------*/
+#works{
+	width:100%;
+}
+.center{
+	display:inline-block;
+	width:100%;
+	text-align:center;
+}
+
+/*h1{
+	font-family: Helvetica,ARIALN,Arial,ヒラギノ角ゴ Pro W3,Hiragino Kaku Gothic Pro,メイリオ,Meiryo,ＭＳ\ Ｐゴシック,MS PGothic,sans-serif;
+	font-size:200%;
+	margin-top:5%;
+	margin-bottom: 10%
+}*/
+
+hr {
+	width:60%;
+  	border: none;
+  	border-top: 1px #000000 solid;
+  	margin-bottom:0px;
+}
+footer p{
+	margin: 0px;
+	padding-top:10px;
+	padding-bottom: 30px;
+}
+
+//フォント指定系クラス
+//ロゴ用(大きさ　太さ指定)
+.logo_font{}
+//本文用(フォントのみ指定)
+.standard_font{}
+//太さのみ変更用
+.bold{}
+
+box用クラス
+boxリキッド対応用クラス
+.works_grid_shape{
+
+}
+.works_grid{
+	/*background-color: red;*/
+	padding:0;
+	text-align: center;
+}
+.works_grid li{
+	display:inline-block;
+	width:25%;
+	vertical-align:top;
+	margin:1%;
+}
+.works_grid li img{
+	width:100%;
+}
+
+.works_grid li a{
+	font-size: 0.7vw;
+	text-decoration: none;
+}
+
+a:visited { color: #000000; }
+/*----------------------------*/
+@media (max-width: 1020px) and (min-width: 500px) {/*タブレット向け*/
+header{
+
+}
+.works_grid{
+}
+}
+@media (max-width: 550px) {/*スマホ向け*/
+header{
+
+}
+.works_grid{
+}
+}
